@@ -7,9 +7,7 @@ class HtmlReporter {
 	}
 
 	onRunComplete(contexts, results) {
-		const destination = methods.getOutputFilepath();
-		// Generate Report
-		return methods.createReport(results, destination);
+		return methods.createReport(results);
 	}
 }
 
