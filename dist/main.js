@@ -201,7 +201,7 @@ const writeFile = (filePath, content) => new Promise((resolve, reject) => {
 		if (err) {
 			return reject(new Error(`Something went wrong when creating the file: ${err}`));
 		}
-		return resolve(fs.writeFile(filePath, content));
+		return resolve(fs.writeFileSync(filePath, content));
 	});
 });
 
